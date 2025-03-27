@@ -1,0 +1,43 @@
+<view class="calculator-container">
+  <!-- 显示结果区域 -->
+  <view class="result">{{result}}</view>
+  
+  <!-- 按键区域 -->
+  <view class="keyboard">
+    <!-- 第一行 -->
+    <view class="row">
+      <view class="btn gray" bindtap="clear">AC</view>
+      <view class="btn gray" bindtap="changeSign">+/-</view>
+      <view class="btn gray" bindtap="percentage">%</view>
+      <view class="btn orange" bindtap="operate" data-type="÷">÷</view>
+    </view>
+    <!-- 第二行 -->
+    <view class="row">
+      <view class="btn" bindtap="appendNum" data-num="7">7</view>
+      <view class="btn" bindtap="appendNum" data-num="8">8</view>
+      <view class="btn" bindtap="appendNum" data-num="9">9</view>
+      <view class="btn orange" bindtap="operate" data-type="×">×</view>
+    </view>
+    <!-- 第三行 -->
+    <view class="row">
+      <view class="btn" bindtap="appendNum" data-num="4">4</view>
+      <view class="btn" bindtap="appendNum" data-num="5">5</view>
+      <view class="btn" bindtap="appendNum" data-num="6">6</view>
+      <view class="btn orange" bindtap="operate" data-type="-">-</view>
+    </view>
+    <!-- 第四行 -->
+    <view class="row">
+      <view class="btn" bindtap="appendNum" data-num="1">1</view>
+      <view class="btn" bindtap="appendNum" data-num="2">2</view>
+      <view class="btn" bindtap="appendNum" data-num="3">3</view>
+      <view class="btn orange" bindtap="operate" data-type="+">+</view>
+    </view>
+    <!-- 第五行 -->
+    <view class="row">
+      <view class="btn calculator" bindtap="switchCalculator">计算器</view>
+      <view class="btn zero" bindtap="appendNum" data-num="0">0</view>
+      <view class="btn" bindtap="appendNum" data-num=".">.</view>
+      <view class="btn orange" bindtap="calculate">=</view>
+    </view>
+  </view>
+</view> 
